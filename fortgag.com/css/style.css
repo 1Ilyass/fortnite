@@ -1,0 +1,555 @@
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/
+/*--------------------------------------------------------------
+# Basics
+--------------------------------------------------------------*/
+body {
+	overflow-x: hidden;
+}
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul {
+	list-style: none;
+}
+textarea, input, a, button { 
+	outline: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	font-family: 'Teko', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background: #0d0f12;
+}
+a {
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus; {
+	text-decoration: none !important;
+	outline: none !important;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.animation-delay-100 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.animation-delay-200 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.animation-delay-300 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.animation-delay-400 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.animation-delay-600 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.animation-delay-800 {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.animation-delay-2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+header {
+	background: #0d0f12;
+	text-align: center;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+}
+.logo-img {
+	max-width: 200px;
+}
+.header-content h1 {
+	color: #fff;
+	font-size: 9em;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 auto;
+}
+.header-content p {
+	color: #f2a900;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Teko', sans-serif;
+	line-height: 1;
+	margin: -20px auto 0 auto;
+}
+.clearfix {
+	clear: both;
+}
+.skin-select-section {
+	position: relative;
+	min-height: 800px;
+	padding: 80px 0 100px;
+	width: 100%;
+	background: url(../img/bg.jpg);
+	background-size: 100% 100%;
+	background-position: center top;
+}
+.skin-select-section .container {
+	max-width: 1800px;
+}
+.skin-select-grid-wrapper {
+	position: relative;
+	justify-content: space-between;
+}
+.skin-select-grid-item {
+	padding: 0 15px;
+	width: 20%;
+	float: left;
+	position: relative;
+}
+.skin-select-grid-item-inner {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 0 50px rgba(119,204,215,.25), 0 0 3px #000;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+	background: #000;
+	cursor: pointer;
+	min-height: 370px;
+	-webkit-transition: -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	transition: -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	transition: transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	transition: transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895), -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	border: 5px dashed #000;
+}
+.skin-select-grid-item-inner:hover {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	border: 5px dashed #f2a900;
+}
+.skin-description {
+	position: relative;
+	color: #fff;
+	text-align: center;
+	padding: 20px 20px 30px 20px;
+	border-top: 4px dashed #151515;
+}
+.skin-name {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Teko', sans-serif;
+	line-height: 1;
+	font-size: 2em;
+	color: #f2a900;
+}
+.skin-name span {
+	display: block;
+	font-size: 0.6em;
+	margin-top: 5px;
+	color: #fff;
+}
+.step-container {
+	position: relative;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 30px 80px 60px 80px;
+	max-width: 560px;
+	background: #000;
+	border: 7px dashed #f2a900;
+	box-shadow: 0 5px 10px #000, 0 3px 30px #000;
+}
+.selected-skin-info {
+	text-align: center;
+}
+.step-content {
+	position: relative;
+	border-top: 3px dashed #151515;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.step-input-label {
+	display: block;
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	color: #999;
+}
+.username-input-wrapper {
+	position: relative;
+}
+.step-input {
+	width: 100%;
+	background: #fff;
+	color: #111;
+	padding: 5px 20px 0 85px;
+	height: 80px;
+	font-size: 1.6em;
+	border: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+.step-input::placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+.step-input:-ms-input-placeholder {
+	color: #ccc;
+}
+.step-input::-ms-input-placeholder {
+	color: #ccc;
+}
+.input-icon {
+	max-width: 45px;
+	position: absolute;
+	left: 20px;
+	top: 18px;
+	z-index: 5;
+}
+.error-w {
+	position: absolute;
+	left: 0;
+	bottom: -24px;
+	width: 100%;
+	text-align: center;
+	color: #fe447d;
+	display: none;
+	font-size: 1em;
+}
+.platform-select-area {
+	position: relative;
+	margin: 30px auto 0 auto;
+}
+.platforms-wrapper {
+	position: relative;
+	display: flex;
+	margin: 0 -10px;
+}
+.platform-item-wrapper {
+	width: 25%;
+	padding: 0 10px;
+}
+.platform-item {
+	background: #fff;
+	border-radius: 10px;
+	height: 68px;
+	line-height: 75px;
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+	color: #111;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+.platform-item.active {
+	background: #f2a900;
+	color: #000;
+}
+.step-button-wrapper {
+	margin: 50px auto 0 auto;
+}
+.step-button {
+	background: #f2a900;
+	color: #fff;
+	padding: 15px 15px 12px 15px;
+	font-size: 1.8em;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 280px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+}
+
+.s-2 {
+	position: relative;
+	padding-top: 30px;
+}
+.console-msg-wrapper {
+	text-align: center;
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: 700;
+	margin: 50px auto 100px auto;
+	text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+}
+.console-loadbar-wrapper {
+	position: relative;
+	z-index: 20;
+	margin: 0 auto;
+	max-width: 500px;
+}
+.console-loader {
+	text-align: center;
+	margin-top: 20px;
+}
+.console-loader span.lnr {
+	font-size: 6em;
+	color: #fff;
+	margin: 15px auto 0 auto;
+}
+.console-loadbar {
+	width: 100%;
+	position: relative;
+	margin: 0 auto 0 auto;
+	background: #151515;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.console-loadbar div {
+	font-size: 7px;
+	text-indent: 9999px;
+	overflow: hidden;
+	background: #16bd64;
+	border-radius: 10px;
+}
+.console-skin-unlocking {
+	display: none;
+	text-align: center;
+	position: relative;
+}
+.console-skin, .console-username {
+	color: #f2a900;
+}
+.m-error {
+	color: #fc4349 !important;
+}
+.m-success {
+	color: #16bd64 !important;
+}
+.human-verification-wrapper {
+	text-align: center;
+}
+.human-verification-wrapper h3 {
+	font-size: 2em;
+	margin: 0 0 20px 0;
+}
+.human-verification-wrapper p {
+	font-size: 1em;
+	color: #999;
+}
+.v-skin, .v-username {
+	font-weight: 900;
+	color: #f2a900;
+}
+.console-skin-unlocking-val {
+	text-align: center;
+	font-size: 7.7em;
+	font-weight: 700;
+	color: #f2a900;
+}
+.console-skin-unlocking-val:after {
+	content: '%';
+	position: relative;
+	color: #fff;
+}
+.verification-loader-wrapper {
+	margin: 20px auto;
+}
+.verification-loader-wrapper i {
+	color: #f2a900;
+	font-size: 2em;
+}
+.h-v-time-left-wrapper {
+	font-size: 1em;
+}
+#human_verification_timer_time {
+	font-weight: 900;
+	display: block;
+}
+.verification-button {
+	display: block;
+}
+/*--------------------------------------------------------------
+# Spinner
+--------------------------------------------------------------*/
+.spinner {
+	width: 77px;
+	height: 77px;
+	margin: 0 auto;
+	background-color: #f2a900;
+	border-radius: 100%;  
+	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+	0% {
+		-webkit-transform: scale(0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+@keyframes sk-scaleout {
+	0% { 
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 100% {
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media screen and (max-width: 1280px) {
+	.logo-img  {
+		max-width: 150px;
+	}
+	.header-content h1 {
+		font-size: 7em;
+	}
+	.header-content p {
+		font-size: 1.8em;
+	}
+	.skin-name {
+		font-size: 1.8em;
+	}
+	.console-skin-unlocking-val {
+		font-size: 6em;
+	}
+	.step-r-i .skin-item-image {
+		max-width: 200px;
+	}
+	.skin-select-grid-item {
+		width: 25%;
+	}
+}
+@media screen and (max-width: 993px) {
+	header {
+		height: auto;
+		padding: 50px 0;
+		border-bottom: 2px solid #fff;
+	}
+	.skin-select-grid-item {
+		width: 33.33%;
+	}
+	.skin-select-section {
+		min-height: auto;
+		padding: 80px 0 100px;
+		background: transparent;
+	}
+	body {
+		background: url(../img/bg.jpg);
+		background-size: cover;
+		background-position: center top;
+		background-attachment: fixed;
+	}
+}
+@media screen and (max-width: 767px) {
+	.skin-select-section {
+		padding: 50px 0 80px;
+	}
+	.skin-select-grid-item {
+		width: 50%;
+	}
+	.skin-select-grid-item-inner {
+		min-height: 350px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.skin-select-grid-item {
+		width: 100%;
+		float: none;
+	}
+	.skin-select-grid-item-inner {
+		min-height: auto;
+	}
+	.step-container {
+		padding: 20px 30px 40px 30px;
+		border: 5px dashed #f2a900;
+	}
+	.platform-select-area {
+		margin-top: 20px;
+	}
+	.platforms-wrapper {
+		margin: 0 -5px;
+	}
+	.platform-item-wrapper {
+		padding: 0 5px;
+	}
+	.platform-item {
+		font-size: 1.8em;
+	}
+	.step-button-wrapper {
+		margin-top: 30px;
+	}
+	.s-2 {
+		padding-top: 0;
+	}
+}
+@media screen and (max-width: 420px) {
+	header {
+		padding: 40px 0 30px;
+	}
+	.logo-img  {
+		max-width: 100px;
+	}
+	.header-content h1 {
+		font-size: 5em;
+	}
+	.header-content p {
+		font-size: 1.6em;
+		margin-top: -10px;
+	}
+	.skin-select-grid-item-inner {
+		margin-bottom: 20px;
+	}
+}
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/

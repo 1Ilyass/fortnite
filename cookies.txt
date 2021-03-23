@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.mywebsiteurl.com	TRUE	/	FALSE	1999999999	__tad	1616494537.7677350
+.fortgag.com	TRUE	/	FALSE	1999999999	__cfduid	d945977bafc6fb1f801f879cafb2ded401616494559
+fortgag.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+
